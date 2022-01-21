@@ -1,0 +1,42 @@
+*{
+    background-color: rgb(224, 224, 224);
+}
+
+.galeria {
+    height: 480px;
+    width: 720px;
+    margin:1em auto;
+    border: 1px solid grey;
+    position: relative;
+}
+
+.galeria img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition : opacity  3 ;
+}
+
+.galeria input[type="radio"] {
+    position: relative;
+    top: 440px;
+    margin-left: 20px;
+    z-index: 5;
+
+
+}
+
+.galeria input[type="radio"]:nth-of-type(1):checked ~ img:nth-of-type(1){
+    opacity: 1;
+}
+
+.galeria input[type="radio"]:nth-of-type(2):checked ~ img:nth-of-type(2){
+    opacity: 1;
+}
+.galeria input[type="radio"]:nth-of-type(3):checked ~ img:nth-of-type(3){
+    opacity: 1;
+}
+.galeria input[type="radio"]:nth-of-type(4):checked ~ img:nth-of-type(4){
+    opacity: 1;
+}
